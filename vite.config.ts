@@ -18,16 +18,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    // Optimización para chunks
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['vue'],
-        },
-      },
-    },
-    // Tamaño de chunk más grande para evitar warnings innecesarios
-    chunkSizeWarningLimit: 1000,
   },
   preview: {
     port: 8080,
